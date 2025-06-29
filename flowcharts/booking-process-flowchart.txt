@@ -1,0 +1,99 @@
+BOOKING PROCESS FLOWCHART DESCRIPTION
+
+This file describes what should be included in the booking-process-flowchart.png file created with Draw.io:
+
+DIAGRAM STRUCTURE:
+
+1. START POINT:
+   - Oval shape labeled "START"
+   - "Guest searches for property"
+
+2. DECISION POINTS (diamond shapes):
+   - "Property available for dates?"
+   - "Guest logged in?"
+   - "Payment successful?"
+   - "Host accepts booking?"
+   - "Booking confirmed?"
+
+3. PROCESS STEPS (rectangles):
+   - "Guest selects property and dates"
+   - "System checks availability"
+   - "Guest clicks 'Book Now'"
+   - "System prompts for login"
+   - "Guest enters login credentials"
+   - "System validates credentials"
+   - "Guest enters payment information"
+   - "System processes payment"
+   - "System sends booking request to host"
+   - "Host reviews booking request"
+   - "System sends confirmation emails"
+   - "Booking is confirmed"
+   - "System updates property availability"
+
+4. END POINTS (ovals):
+   - "END - Booking Successful"
+   - "END - Property Not Available"
+   - "END - Login Failed"
+   - "END - Payment Failed"
+   - "END - Host Declined"
+
+5. FLOW SEQUENCE:
+
+START → "Guest selects property and dates"
+↓
+"System checks availability"
+↓
+DECISION: "Property available for dates?"
+├─ NO → "END - Property Not Available"
+└─ YES → "Guest clicks 'Book Now'"
+    ↓
+    DECISION: "Guest logged in?"
+    ├─ NO → "System prompts for login"
+    │   ↓
+    │   "Guest enters login credentials"
+    │   ↓
+    │   "System validates credentials"
+    │   ↓
+    │   DECISION: "Login successful?"
+    │   ├─ NO → "END - Login Failed"
+    │   └─ YES → "Guest enters payment information"
+    └─ YES → "Guest enters payment information"
+        ↓
+        "System processes payment"
+        ↓
+        DECISION: "Payment successful?"
+        ├─ NO → "END - Payment Failed"
+        └─ YES → "System sends booking request to host"
+            ↓
+            "Host reviews booking request"
+            ↓
+            DECISION: "Host accepts booking?"
+            ├─ NO → "END - Host Declined"
+            └─ YES → "System sends confirmation emails"
+                ↓
+                "Booking is confirmed"
+                ↓
+                "System updates property availability"
+                ↓
+                "END - Booking Successful"
+
+6. ADDITIONAL ELEMENTS:
+- Error handling paths
+- Notification steps
+- Database update steps
+- Email confirmation steps
+
+7. COLOR CODING:
+- Start/End: Green ovals
+- Processes: Blue rectangles
+- Decisions: Yellow diamonds
+- Error paths: Red arrows
+- Success paths: Green arrows
+- Normal flow: Black arrows
+
+8. ANNOTATIONS:
+- Add notes explaining complex steps
+- Include timing information where relevant
+- Show parallel processes if any
+
+This flowchart should be exported as PNG and saved as "booking-process-flowchart.png" in this directory. 

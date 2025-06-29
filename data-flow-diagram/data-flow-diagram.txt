@@ -1,0 +1,107 @@
+DATA FLOW DIAGRAM DESCRIPTION
+
+This file describes what should be included in the data-flow.png file created with Draw.io:
+
+DIAGRAM STRUCTURE:
+
+1. EXTERNAL ENTITIES (rectangles):
+   - GUEST (top left)
+   - HOST (top right)
+   - ADMIN (bottom left)
+   - PAYMENT GATEWAY (bottom right)
+   - EMAIL SERVICE (right side)
+   - FILE STORAGE (right side)
+
+2. DATA STORES (open rectangles):
+   - USERS DATABASE
+   - PROPERTIES DATABASE
+   - BOOKINGS DATABASE
+   - PAYMENTS DATABASE
+   - REVIEWS DATABASE
+   - NOTIFICATIONS DATABASE
+
+3. PROCESSES (circles/ovals):
+
+GUEST PROCESSES:
+- 1.0 User Registration
+- 2.0 User Login
+- 3.0 Search Properties
+- 4.0 Book Property
+- 5.0 Make Payment
+- 6.0 Write Review
+
+HOST PROCESSES:
+- 7.0 Create Listing
+- 8.0 Manage Bookings
+- 9.0 Receive Payment
+- 10.0 Respond to Review
+
+ADMIN PROCESSES:
+- 11.0 Manage Users
+- 12.0 Monitor System
+- 13.0 Generate Reports
+
+SYSTEM PROCESSES:
+- 14.0 Validate Booking
+- 15.0 Process Payment
+- 16.0 Send Notifications
+- 17.0 Update Availability
+
+4. DATA FLOWS (arrows with labels):
+
+FROM GUEST:
+- Registration Data → 1.0 User Registration
+- Login Credentials → 2.0 User Login
+- Search Criteria → 3.0 Search Properties
+- Booking Request → 4.0 Book Property
+- Payment Info → 5.0 Make Payment
+- Review Data → 6.0 Write Review
+
+FROM HOST:
+- Property Data → 7.0 Create Listing
+- Booking Response → 8.0 Manage Bookings
+- Review Response → 10.0 Respond to Review
+
+FROM ADMIN:
+- User Management → 11.0 Manage Users
+- System Commands → 12.0 Monitor System
+
+TO DATABASES:
+- 1.0 → USERS DATABASE (user data)
+- 7.0 → PROPERTIES DATABASE (property data)
+- 4.0 → BOOKINGS DATABASE (booking data)
+- 5.0 → PAYMENTS DATABASE (payment data)
+- 6.0 → REVIEWS DATABASE (review data)
+- 16.0 → NOTIFICATIONS DATABASE (notification data)
+
+FROM DATABASES:
+- USERS DATABASE → 2.0, 3.0, 4.0, 11.0
+- PROPERTIES DATABASE → 3.0, 4.0, 7.0, 8.0
+- BOOKINGS DATABASE → 4.0, 8.0, 14.0, 17.0
+- PAYMENTS DATABASE → 5.0, 9.0, 15.0
+- REVIEWS DATABASE → 6.0, 10.0
+- NOTIFICATIONS DATABASE → 16.0
+
+EXTERNAL INTERACTIONS:
+- 5.0 → PAYMENT GATEWAY (payment processing)
+- 16.0 → EMAIL SERVICE (send emails)
+- 7.0 → FILE STORAGE (upload images)
+
+5. LEVEL 0 DFD (Context Diagram):
+- Show the system as one process in the center
+- Show all external entities around it
+- Show main data flows between system and entities
+
+6. LEVEL 1 DFD (Detailed):
+- Break down the main system into sub-processes
+- Show detailed data flows between processes
+- Include all data stores
+
+COLOR CODING:
+- External Entities: Blue
+- Processes: Green
+- Data Stores: Yellow
+- Data Flows: Black arrows
+- System Boundary: Red rectangle
+
+This diagram should be exported as PNG and saved as "data-flow.png" in this directory. 

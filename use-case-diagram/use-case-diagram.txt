@@ -1,0 +1,72 @@
+USE CASE DIAGRAM DESCRIPTION
+
+This file describes what should be included in the use-case-diagram.png file created with Draw.io:
+
+DIAGRAM STRUCTURE:
+
+1. SYSTEM BOUNDARY:
+   - Draw a rectangle labeled "Airbnb Clone Backend System"
+   - All use cases go inside this boundary
+
+2. ACTORS (placed outside the system boundary):
+   - GUEST (left side) - stick figure with "Guest" label
+   - HOST (left side) - stick figure with "Host" label  
+   - ADMIN (left side) - stick figure with "Admin" label
+   - PAYMENT GATEWAY (right side) - rectangle with "Payment Gateway"
+   - EMAIL SERVICE (right side) - rectangle with "Email Service"
+   - FILE STORAGE (right side) - rectangle with "File Storage"
+
+3. USE CASES (inside system boundary, organized by actor):
+
+GUEST USE CASES (top section):
+- Register Account
+- Login
+- Search Properties
+- Filter Properties
+- View Property Details
+- Book Property
+- Make Payment
+- Cancel Booking
+- Write Review
+- Update Profile
+- View Booking History
+
+HOST USE CASES (middle section):
+- Register Account
+- Login
+- Create Listing
+- Edit Listing
+- Delete Listing
+- Manage Bookings
+- Set Availability
+- Receive Payments
+- Respond to Reviews
+- Update Profile
+
+ADMIN USE CASES (bottom section):
+- Manage Users
+- Monitor Listings
+- Track Bookings
+- View Analytics
+- Handle Disputes
+- System Maintenance
+
+SYSTEM USE CASES (center):
+- Send Notifications
+- Process Payments
+- Validate Bookings
+- Generate Reports
+- Backup Data
+
+4. RELATIONSHIPS:
+- Association lines: Connect actors to their use cases
+- Include relationships: Use <<include>> stereotype
+- Extend relationships: Use <<extend>> stereotype
+
+5. NOTATION:
+- Actors: Stick figures for human actors, rectangles for system actors
+- Use cases: Ovals
+- System boundary: Rectangle
+- Relationships: Lines with appropriate stereotypes
+
+This diagram should be exported as PNG and saved as "use-case-diagram.png" in this directory. 

@@ -1,0 +1,46 @@
+FEATURES AND FUNCTIONALITIES DIAGRAM DESCRIPTION
+
+This file describes what should be included in the features-diagram.png file created with Draw.io:
+
+DIAGRAM STRUCTURE:
+1. CENTRAL TITLE: "Airbnb Clone Backend - Features and Functionalities"
+
+2. MAIN SECTIONS (arranged in a circular or hierarchical layout):
+   - User Management System
+   - Property Listings Management  
+   - Search and Filtering System
+   - Booking Management System
+   - Payment Integration
+   - Reviews and Ratings System
+   - Notification System
+   - Admin Dashboard
+
+3. FOR EACH SECTION, INCLUDE:
+   - Main feature name
+   - Key functionalities as bullet points
+   - Icons or visual representations
+
+4. CONNECTING LINES:
+   - Show relationships between features
+   - Use different colors for different types of relationships
+
+5. TECHNICAL LAYER (bottom section):
+   - Database Management
+   - API Development
+   - Authentication & Security
+   - File Storage
+   - Error Handling & Logging
+
+6. NON-FUNCTIONAL REQUIREMENTS (side section):
+   - Scalability
+   - Performance Optimization
+   - Testing
+   - Security
+
+COLOR SCHEME:
+- Core Features: Blue
+- Technical Features: Green
+- Non-Functional: Orange
+- Relationships: Gray lines
+
+This diagram should be exported as PNG and saved as "features-diagram.png" in this directory. 
